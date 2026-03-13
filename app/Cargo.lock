@@ -9,7 +9,7 @@ dependencies = [
  "cortex-m",
  "cortex-m-rt",
  "defmt 1.0.1",
- "defmt-rtt",
+ "defmt-semihosting",
  "defmt-test",
  "panic-probe",
  "semihosting",
@@ -126,13 +126,15 @@ dependencies = [
 ]
 
 [[package]]
-name = "defmt-rtt"
-version = "1.1.0"
+name = "defmt-semihosting"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "93d5a25c99d89c40f5676bec8cefe0614f17f0f40e916f98e345dae941807f9e"
+checksum = "63b0302c696f9080df24a40eed6d34e34de9a610723b8176df52272798971250"
 dependencies = [
+ "cortex-m",
  "critical-section",
  "defmt 1.0.1",
+ "semihosting",
 ]
 
 [[package]]
@@ -226,9 +228,9 @@ dependencies = [
 
 [[package]]
 name = "quote"
-version = "1.0.44"
+version = "1.0.45"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "21b2ebcf727b7760c461f091f9f0f539b77b8e87f2fd88131e7f1b433b3cece4"
+checksum = "41f2619966050689382d2b44f664f4bc593e129785a36d6ee376ddf37259b924"
 dependencies = [
  "proc-macro2",
 ]
@@ -244,9 +246,9 @@ dependencies = [
 
 [[package]]
 name = "semihosting"
-version = "0.1.24"
+version = "0.1.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e896488941756e5de3ee8449495464dbbf2201c85d2d1ace47d4fb81c74b99ec"
+checksum = "f8e4abf97879f4e80db69a9fba7bd64998e9bdad25f58ef045a778e191172fd4"
 
 [[package]]
 name = "semver"

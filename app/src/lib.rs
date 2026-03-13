@@ -1,7 +1,8 @@
 #![no_main]
 #![no_std]
 
-use defmt_rtt as _; // global logger
+//use defmt_rtt as _; // global logger
+use defmt_semihosting as _; // global logger
 
 // TODO(5) adjust HAL import
 // use some_hal as _; // memory layout

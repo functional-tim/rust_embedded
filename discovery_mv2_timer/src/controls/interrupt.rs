@@ -13,7 +13,6 @@ fn GPIOTE() {
             let counter = match(a_pressed, b_pressed) {
                 (true, false) => Counter::AddOneMinute,
                 (false, true) => Counter::AddFiveMinutes,
-                (true, true) => Counter::Reset,
                 _ => Counter::None,
             };
 

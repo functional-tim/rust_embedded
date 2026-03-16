@@ -1,7 +1,7 @@
 pub mod interrupt;
 pub mod show;
 
-pub use show::{clear_display, counter_leds, display_image, number_binary};
+pub use show::{clear_display, counter_leds, display_image};
 
 use core::cell::RefCell;
 use cortex_m::interrupt::{free as interrupt_free, Mutex};

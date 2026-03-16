@@ -15,7 +15,7 @@ pub fn get_counter(reset: bool) -> Counter {
     interrupt_free(|cs| {
         let counter = *COUNTER.borrow(cs).borrow();
         if reset {
-            *COUNTER.borrow(cs).borrow_mut() = Counter::None
+            *COUNTER.borrow(cs).borrow_mut() = Counter::None;
         }
         counter
     })
